@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Server", "Autokuca.Server\Autokuca.Server.csproj", "{6E53404D-8186-4AAC-94C6-053720F49CE8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41A30E58-7B9D-4639-91AA-E56A5F67B4D1} = {41A30E58-7B9D-4639-91AA-E56A5F67B4D1}
+		{667BA3C6-0E9A-412F-8605-2CB954C1FC5C} = {667BA3C6-0E9A-412F-8605-2CB954C1FC5C}
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636} = {99FFB349-5BD2-4C2D-9666-6F59AD511636}
+		{CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09} = {CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09}
+	EndProjectSection
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "autokuca.client", "autokuca.client\autokuca.client.esproj", "{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.DAL", "Autokuca.DAL\Autokuca.DAL.csproj", "{41A30E58-7B9D-4639-91AA-E56A5F67B4D1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636} = {99FFB349-5BD2-4C2D-9666-6F59AD511636}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Model", "Autokuca.Model\Autokuca.Model.csproj", "{99FFB349-5BD2-4C2D-9666-6F59AD511636}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Repository", "Autokuca.Repository\Autokuca.Repository.csproj", "{667BA3C6-0E9A-412F-8605-2CB954C1FC5C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{41A30E58-7B9D-4639-91AA-E56A5F67B4D1} = {41A30E58-7B9D-4639-91AA-E56A5F67B4D1}
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636} = {99FFB349-5BD2-4C2D-9666-6F59AD511636}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Autokuca.Service", "Autokuca.Service\Autokuca.Service.csproj", "{CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09}"
+	ProjectSection(ProjectDependencies) = postProject
+		{667BA3C6-0E9A-412F-8605-2CB954C1FC5C} = {667BA3C6-0E9A-412F-8605-2CB954C1FC5C}
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636} = {99FFB349-5BD2-4C2D-9666-6F59AD511636}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E53404D-8186-4AAC-94C6-053720F49CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E53404D-8186-4AAC-94C6-053720F49CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E53404D-8186-4AAC-94C6-053720F49CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E53404D-8186-4AAC-94C6-053720F49CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0363EEC-CD2F-4D24-975B-2B92E2D61DE6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{41A30E58-7B9D-4639-91AA-E56A5F67B4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41A30E58-7B9D-4639-91AA-E56A5F67B4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41A30E58-7B9D-4639-91AA-E56A5F67B4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41A30E58-7B9D-4639-91AA-E56A5F67B4D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FFB349-5BD2-4C2D-9666-6F59AD511636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667BA3C6-0E9A-412F-8605-2CB954C1FC5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667BA3C6-0E9A-412F-8605-2CB954C1FC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667BA3C6-0E9A-412F-8605-2CB954C1FC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667BA3C6-0E9A-412F-8605-2CB954C1FC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3FA10A-002B-4AE1-B5A5-398EDF4ADC09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7739B45C-346B-43B0-B0C2-B45530274558}
+	EndGlobalSection
+EndGlobal

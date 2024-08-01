@@ -1,0 +1,6 @@
+@Autokuca.Server_HostAddress = http://localhost:5054
+
+GET {{Autokuca.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
