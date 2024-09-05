@@ -20,6 +20,7 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(conne
 
 builder.Services.AddAuthorization();
 builder.Services.AddIdentityApiEndpoints<ApplicationUser>()
+    .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<DataContext>();
 
 // Add services to the container.
@@ -30,6 +31,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseCors();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();

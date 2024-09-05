@@ -39,5 +39,7 @@ namespace Autokuca.Repository.Common
         Task<bool> IzbrisiVozilo(int VoziloId);
 
         Task<bool> NapraviVozilo(Vozilo Vozilo);
+        Task<List<ApplicationUser>> GetApplicationUsers(string mail, string lozinka);
+        Task<ApplicationUser> DohvatiUser(string idUser);
     }
 }

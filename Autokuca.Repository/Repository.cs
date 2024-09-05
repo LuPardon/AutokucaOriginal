@@ -90,6 +90,39 @@ namespace Autokuca.Repository
             }
         }
 
+        public async Task<List<ApplicationUser>> GetApplicationUsers(string mail, string lozinka)
+        {
+            try
+                {
+                    var query = _context.Users.AsQueryable();
+                    if (!string.IsNullOrEmpty(mail))
+                    {
+                        query = query.Where(s =>
+                        s.Email != null &&
+                        s.Email.Contains(mail));
+                    }
+
+                    return await query.ToListAsync();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+        }
+
+        public async Task<ApplicationUser> DohvatiUser(string idUser)
+        {
+            try
+            {
+                var task = await _context.Users.FirstOrDefaultAsync(t => t.Id == idUser );
+                return (task is null) ? null : task;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public async Task<IEnumerable<Vozilo>> DohvatiVozila(
             int? id_salona,
             string? proizvodac,

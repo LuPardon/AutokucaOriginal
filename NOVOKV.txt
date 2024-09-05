@@ -1,0 +1,50 @@
+GITHUB: https://github.com/LuPardon/OfficialAutokuca.git
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server= DESKTOP-29MJTKP\SQLEXPRESS;Database=auto_kuca;Trusted_Connection=True;TrustServerCertificate=True;"
+  },
+"Data Source=DESKTOP-29MJTKP\SQLEXPRESS;Initial Catalog=auto_kuca; Trusted_Connection=True;TrustServerCertificate=True;"
+
+windows credentials menager za git hub sifre tamo spremljene
+login:
+{
+  "email": "string@string.hr",
+  "password": "String11!"
+}
+
+jwt.io stranica za token da vidimo šta što znači
+ako hoćemo dodati migracije iz dal context optionBuilder.UseSqlServer("...")
+
+
+NOVI PROJEKT POMOĆ:
+
+"ConnectionStrings": {
+  "DataContextConnection": "Server= DESKTOP-29MJTKP\\SQLEXPRESS;Database=AutoKuca;Trusted_Connection=True;TrustServerCertificate=True;"
+}
+
+Obrana!!!
+
+admin salona svakog(voditelj)
+globalni admin koji ih dodaje
+nikola ima primjer u svoj
+
+prikaz kartica malo dizajn dotjerati
+
+Scaffold u terminalu (VisualStudio)
+cd . 
+cd .\Autokuca.Server\
+dotnet ef dbcontext scaffold "Server= DESKTOP-29MJTKP\\SQLEXPRESS;Database=AutoKuca;Trusted_Connection=True;TrustServerCertificate=True;" Microsoft.EntityFramework.Core -o "test"
+
+
+
+
+
+radim li projekt samo za administratora stranice ili za korisnika (ili oboje)
+dodati u salone lokaciju (adresa i grad), radno vrijeme, kontakt broj, saloni samo za određene marke?
+u vozila prijeđene kilometre, tip motora, cijena, marka, šifra u model? vozila ili kao šifra oglasa,
+dodati i model?, vrsta motora(dizel), stanje (novi i rabljeni), slika auta, opis, 
+ispis u karticama ili u tablici??
+
+
+USPJEŠNI POČETAK:
+video ytb Patrick God auth, migracije, scafold, controllers,dependencies, react 

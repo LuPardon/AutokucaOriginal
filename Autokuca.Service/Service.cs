@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace Autokuca.Service
 {
 
-    public class Service:IService
+    public class Service : IService
     {
         private readonly IRepository _repository;
 
@@ -88,6 +88,16 @@ namespace Autokuca.Service
         public async Task<bool> NapraviVozilo(Vozilo Vozilo)
         {
             return await _repository.NapraviVozilo(Vozilo);
+        }
+
+        public async Task<ApplicationUser> DohvatiUser(string idUser)
+        {
+            return await _repository.DohvatiUser(idUser);
+        }
+
+        public async Task<List<ApplicationUser>> GetApplicationUsers(string mail, string lozinka)
+        {
+            return await _repository.GetApplicationUsers(mail, lozinka);
         }
     }
 }
